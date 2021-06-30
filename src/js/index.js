@@ -1,4 +1,4 @@
-import Vue from 'vue';
+import Vue from "vue";
 // import VueRouter from 'vue-router';
 
 // import routes from 'TodoRouterDir/routes';
@@ -7,10 +7,10 @@ import Vue from 'vue';
 // import routes from 'VuexSample/routes';
 // import store from 'VuexSample/store';
 
-import '../scss/global.scss';
+import "../scss/global.scss";
 
-import myApp from './first';
-// import myApp from 'TodoDir';
+// import myApp from './first';
+import myApp from "TodoDir";
 // import myApp from 'TodoRouterDir';
 // import myApp from 'TodoVuexDir';
 // import myApp from 'VuexSample';
@@ -21,11 +21,15 @@ import myApp from './first';
 //   mode: 'history',
 // });
 
+// インスタンス生成
 new Vue({
-  el: '#app',
+  // el は、マウント要素 DOM要素を指定する。
+  el: "#app",
+
   // router,
   // store,
-  render: h => h(myApp),
+  render: (h) => h(myApp),
+  // h = hype script の略。
   // render: h => h(myApp), は↓の書き方を短くしたもの
   // render: function (createElement) {
   //   return createElement(myApp)
