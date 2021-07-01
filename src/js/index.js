@@ -1,7 +1,7 @@
 import Vue from "vue";
-// import VueRouter from 'vue-router';
+import VueRouter from "vue-router";
 
-// import routes from 'TodoRouterDir/routes';
+import routes from "TodoRouterDir/routes";
 // import routes from 'TodoVuexDir/routes';
 // import store from 'TodoVuexDir/store';
 // import routes from 'VuexSample/routes';
@@ -10,23 +10,23 @@ import Vue from "vue";
 import "../scss/global.scss";
 
 // import myApp from './first';
-import myApp from "TodoDir";
-// import myApp from 'TodoRouterDir';
+// import myApp from "TodoDir";
+import myApp from "TodoRouterDir";
 // import myApp from 'TodoVuexDir';
 // import myApp from 'VuexSample';
 
-// Vue.use(VueRouter);
-// const router = new VueRouter({
-//   routes,
-//   mode: 'history',
-// });
+Vue.use(VueRouter);
+const router = new VueRouter({
+  routes,
+  mode: "history",
+});
 
 // インスタンス生成
 new Vue({
   // el は、マウント要素 DOM要素を指定する。
   el: "#app",
 
-  // router,
+  router,
   // store,
   render: (h) => h(myApp),
   // h = hype script の略。

@@ -1,1 +1,1 @@
-{"todos":[{"title":"hello world","detail":"hogehoge","id":1,"completed":false},{"title":"hogehoge","detail":"hogehoge","id":2,"completed":false},{"title":"test","detail":"test","id":3,"completed":false}]}
+{"todos":[{"title":"hello world","detail":"hogehoge","id":1,"completed":false},{"title":"hogehoge","detail":"hogehoge","id":2,"completed":true},{"title":"test","detail":"testtest","id":3,"completed":false}]}
