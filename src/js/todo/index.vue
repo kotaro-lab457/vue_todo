@@ -127,7 +127,7 @@ export default {
     axios.get('http://localhost:3000/api/todos/').then(({ data }) => {
       this.todos = data.todos.reverse();
       // reverse()で要素を入れ替える。
-    }).catch(( err ) => {
+    }).catch((err) => {
       if (err.response) {
         this.errorMessage = err.response.data.message;
       } else {
@@ -205,6 +205,7 @@ export default {
         && targetTodo.detail === this.targetTodo.detail
       ) {
         this.targetTodo = this.initTargetTodo();
+        return;
       }
       axios.patch(`http://localhost:3000/api/todos/${this.targetTodo.id}`,{
         title: this.targetTodo.title,
